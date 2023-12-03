@@ -17,15 +17,15 @@ endif()
 
 # ------------------------------------------------------------------------------
 
-project(solitair_cpp
+project(solitaire_cpp
   LANGUAGES CXX
   VERSION 1.0.0
 )
 
-add_executable(solitair_cpp src/main.cpp)
-target_include_directories(solitair_cpp PRIVATE src)
+add_executable(solitaire_cpp src/main.cpp)
+target_include_directories(solitaire_cpp PRIVATE src)
 
-target_link_libraries(solitair_cpp
+target_link_libraries(solitaire_cpp
   PRIVATE ftxui::screen
   PRIVATE ftxui::dom
   PRIVATE ftxui::component # Not needed for this example.
